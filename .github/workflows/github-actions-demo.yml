@@ -24,7 +24,7 @@ jobs:
       - name: List files in the repository
         run: |
             echo "The repository ${{ github.repository }} contains the following files:"
-                    tree            
+                    tree\
   Test:
         runs-on: ubuntu-latest
         if: github.event_name == 'workflow_dispatch'
@@ -65,5 +65,4 @@ jobs:
           sleep 10
       - run: |
           echo "🚀 Step 5..."
-          sleep 10                
-        
+          sleep 10         
